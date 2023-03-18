@@ -15,7 +15,7 @@ body{
 .container{
     width: 100%;
     max-width: 650px;
-    background:rgba(0 0 0 0.5);
+    background:rgba(0, 0, 0, 0.5);
     padding: 28px;
     margin: 0 28px;
     border-radius: 10px;
@@ -31,6 +31,9 @@ body{
     text-shadow: 2px 2px 2px black;
     border-bottom: solid 1px black;
 }
+
+
+
 
 .user-info{
     display: flex;
@@ -53,7 +56,7 @@ body{
 }
 .input-box label{
     width: 95%;
-    color: black;
+    color: #fff;
     font-size: 20px;
     font-weight: 400;
     margin: 5px 0;
@@ -81,13 +84,26 @@ body{
     margin: 15px 0;
     color: white;
 
+
 }
+
+.gender{
+    color:#fff;
+}
+
 .gender-type label{
     padding: 0 20px 0 5px;
+
 }
 .gender-title label{
      cursor: pointer;
+     
 }
+
+.gender-title{
+    color:#fff;
+}
+
 .gender-title input{
     cursor: pointer;
 }
