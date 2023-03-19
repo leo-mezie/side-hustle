@@ -5,32 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>form </title>
+
     <link rel="stylesheet" href="style.css">
-
-    <!-- js -->
-    <script src="index.js" defer ></script>
-
     
 </head>
 <body>
     <div class="container">
         <h1 class="form-title">Login Form</h1>
 <fieldset>
-    <form action="">
+    <form name="RegForm"  action="#">
        <div class="user-info">
             <div class="input-box">
                 <label for="Fullname">Fullname</label>
-                <input type="text" id="Fullname" name="Fullame" placeholder="Enter Fullname" required >
+                <input type="text" id="Fullname" name="fullName" placeholder="Enter Fullname" required />
             </div>
 
             <div class="input-box">
                 <label for="Email">Email</label>
-                <input type="Email" id="Email" name="Email" placeholder="Enter Email" required/>  
+                <input type="Email" id="Email" name="Email" onblur="emailvalidate()"placeholder="Enter Email"  required/>  
             </div>
 
             <div class="input-box">
                 <label for="Phone no">Phone no</label>
-        <input type="text" id="Phone no" name="Phone no" placeholder="Enter Phone no" required/>
+        <input type="text" id="Phone-no" name="Phone" placeholder="Enter Phone no" required/>
             </div>
 
             <div class="input-box">
@@ -52,7 +49,7 @@
             </div>
         </div>
         <div class="sub">
-            <button type="submit" class="btn" onclick="successMsg()">submit</button>
+            <button type="submit"  onclick="formvalidate()" class="btn" >submit</button>
 
         </div>
 
@@ -64,18 +61,16 @@
     
     
             
-            
-
-            
-
-        
-
-            
-
+ 
+  
+             <!-- js -->
+    <script src="index.js" defer></script>
     
-
-    
-
+<!-- <script>
+    function formvalidate(){
+    alert("form submitted")
+    }
+</script> -->
    
     </body>
 </html>
